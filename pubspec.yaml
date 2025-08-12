@@ -1,0 +1,40 @@
+name: arcium_id_card
+description: Arcium community ID card generator example
+publish_to: "none"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.3.6
+
+  # Capture widget to image
+  screenshot: 3.0.0
+
+  # Save files
+  path_provider: ^2.0.14
+
+  # Share images + text through native share sheet
+  share_plus: ^6.3.0
+
+  # Open URLs (for X/tweet fallback)
+  url_launcher: ^6.1.10
+
+  # Date formatting
+  intl: ^0.18.1
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/arcium_logo.jpg
