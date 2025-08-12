@@ -23,7 +23,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
   // caption that will be shared on X (uses the sample provided plus emoji & greeting)
   String get _caption =>
-      'just generated my\n@ArciumHQ\ncommunity ID! 🚀 create yours at https://succinctbadge.vercel.app\nencrypted supercomputer!\n☂️ gMPC';
+      'just generated my\n@ArciumHQ\ncommunity ID! 🚀 create yours at https://arcium-id.globeapp.dev/\nencrypted supercomputer!\n☂️ gMPC';
 
   @override
   Widget build(BuildContext context) {
