@@ -51,7 +51,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                       // Wrap the IDCard with Screenshot to allow capture
                       Screenshot(
                         controller: _screenshotController,
-                        child: IDCard(member: member, width: 900, height: 560),
+                        child: IDCard(member: member, width: 530, height: 335),
                       ),
                       const SizedBox(height: 12),
                       _buildActionRow(),
@@ -71,7 +71,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
                           children: [
                             Screenshot(
                               controller: _screenshotController,
-                              child: IDCard(member: member, width: 900, height: 560),
+                              child: IDCard(member: member, width: 530, height: 335),
                             ),
                             const SizedBox(height: 12),
                             _buildActionRow(),

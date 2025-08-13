@@ -21,8 +21,8 @@ class IDCard extends ConsumerWidget {
   const IDCard({
     Key? key,
     required this.member,
-    this.width = 1000,
-    this.height = 620,
+    this.width = 530,
+    this.height = 335,
   }) : super(key: key);
 
   // helper to create initials (used for fallback avatar)
@@ -71,8 +71,8 @@ class IDCard extends ConsumerWidget {
                     children: [
                       // logo circle container
                       Container(
-                        width: 86,
-                        height: 86,
+                        width: 52,
+                        height: 52,
                         decoration: BoxDecoration(
                           color: Colors.white.withOpacity(0.08),
                           shape: BoxShape.circle,
@@ -114,7 +114,7 @@ class IDCard extends ConsumerWidget {
                                   'Arcium',
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 20,
+                                    fontSize: 14,
                                     fontWeight: FontWeight.bold,
                                     letterSpacing: 0.4,
                                   ),
@@ -135,7 +135,7 @@ class IDCard extends ConsumerWidget {
                               'Community ID • Built on Solana',
                               style: TextStyle(
                                 color: Colors.white.withOpacity(0.85),
-                                fontSize: 12,
+                                fontSize: 9,
                               ),
                             ),
                           ],
@@ -194,15 +194,15 @@ class IDCard extends ConsumerWidget {
                                         }
                                       },
                                       child: Container(
-                                        width: 160,
-                                        height: 160,
+                                        width: 90,
+                                        height: 90,
                                         decoration: BoxDecoration(
                                           shape: BoxShape.circle,
                                           color: Colors.white.withOpacity(0.1),
                                           border: Border.all(
                                             color:
                                                 Colors.white.withOpacity(0.14),
-                                            width: 2,
+                                            width: 1.5,
                                           ),
                                         ),
                                         child: ClipOval(
@@ -216,7 +216,7 @@ class IDCard extends ConsumerWidget {
                                                         .add_a_photo, // Camera/photo add icon
                                                     color: Colors.white
                                                         .withOpacity(0.8),
-                                                    size: 48,
+                                                    size: 28,
                                                   ),
                                                 ),
                                         ),
@@ -231,7 +231,7 @@ class IDCard extends ConsumerWidget {
                                           : 'Your name',
                                       style: const TextStyle(
                                         color: Colors.white,
-                                        fontSize: 22,
+                                        fontSize: 14,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -266,7 +266,7 @@ class IDCard extends ConsumerWidget {
                                         'Member details',
                                         style: TextStyle(
                                           color: Colors.white70,
-                                          fontSize: 14,
+                                          fontSize: 10,
                                           fontWeight: FontWeight.w600,
                                         ),
                                       ),
@@ -311,6 +311,7 @@ class IDCard extends ConsumerWidget {
                                               'gMPC',
                                               style: TextStyle(
                                                 color: Colors.white,
+                                                fontSize: 10, 
                                                 fontWeight: FontWeight.bold,
                                               ),
                                             ),
@@ -325,7 +326,7 @@ class IDCard extends ConsumerWidget {
                                               style: TextStyle(
                                                 color: Colors.white
                                                     .withOpacity(0.85),
-                                                fontSize: 12,
+                                                fontSize: 8,
                                               ),
                                             ),
                                           )
@@ -353,12 +354,12 @@ class IDCard extends ConsumerWidget {
       child: Row(
         children: [
           SizedBox(
-            width: 90,
+            width: 60,
             child: Text(
               label,
               style: TextStyle(
                 color: Colors.white.withOpacity(0.85),
-                fontSize: 13,
+                fontSize: 9,
               ),
             ),
           ),
@@ -368,7 +369,7 @@ class IDCard extends ConsumerWidget {
               value,
               style: const TextStyle(
                 color: Colors.white,
-                fontSize: 15,
+                fontSize: 10,
                 fontWeight: FontWeight.w600,
               ),
             ),
